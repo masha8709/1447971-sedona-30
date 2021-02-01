@@ -24,20 +24,29 @@
             <form action="#">
                 <fieldset>
                     <legend>Инфраструктура:</legend>
-                    <label><input type="checkbox" checked>Бассейн</label>
-                    <label><input type="checkbox">Парковка</label>
-                    <label><input type="checkbox">Wi-fi</label>
+                    <input type="checkbox" id="pool" checked>
+                    <label for="pool">Бассейн</label>
+                    <input type="checkbox" id="parking">
+                    <label for="parking">Парковка</label>
+                    <input type="checkbox" id="wifi">
+                    <label for="wifi">Wi-fi</label>
                 </fieldset>
                 <fieldset>
                     <legend>Тип жилья:</legend>
-                    <label><input type="checkbox" checked>Гостиница</label>
-                    <label><input type="checkbox" checked>Мотель</label>
-                    <label><input type="checkbox" checked>Апартаменты</label>
+                    <input type="checkbox" id="hotel" checked>
+                    <label for="hotel">Гостиница</label>
+                    <input type="checkbox" id="motel" checked>
+                    <label for="motel">Мотель</label>
+                    <input type="checkbox" id="apartments" checked>
+                    <label for="apartments">Апартаменты</label>
                 </fieldset>
                 <fieldset>
                     <legend>Стоимость в сутки (р):</legend>
-                    <p><span>от 0</span> <span>до 3000</span></p>
-                    <input type="range" min="0" step="1">
+                    <input type="text" value="от 0" id="minprice">
+                    <label for="minprice"></label>
+                    <input type="text" value="до 3000" id="maxprice">
+                    <label for="maxprice"></label>
+                    <div></div> <!--здесь будет бегунок-->
                    <input type="submit" value="Показать">
                 </fieldset>
             </form> 
