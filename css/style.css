@@ -28,6 +28,9 @@
   --basic-grey-modal: #f2f2f2;
   --basic-darkbrown: #333333;
   --special: #666666;
+  --basic-focus-logo: #bdbbbc;
+  --basic-hover: #669ec0;
+  --basic-focus: #5496bd;
 }
 
 /*Global*/
@@ -169,4 +172,44 @@ img {
   background-color: var(--basic-brown);
   font-size: 21px;
   line-height: 26px;
+}
+
+/*footer*/
+
+.main-footer {
+  background-color: var(--basic-footer);
+}
+
+.footer-insta, .footer-phone {
+  color: inherit;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.social-button {
+  color: var(--basic-white);
+}
+
+.social-button:hover {
+  color: var(--basic-hover);
+}
+
+.social-button:focus {
+  color: var(--basic-focus);
+}
+
+.footer-copyright {
+  line-height: 26px;
+}
+
+.footer-logo:hover {
+  color: var(--basic-blue);
+}
+
+.footer-logo:focus {
+  color: var(--basic-focus-logo);
 }
