@@ -29,8 +29,10 @@
   --basic-darkbrown: #333333;
   --special: #666666;
   --basic-focus-logo: #bdbbbc;
-  --basic-hover: #669ec0;
-  --basic-focus: #5496bd;
+  --basic-hover-blue: #669ec0;
+  --basic-focus-blue: #5496bd;
+  --basic-hover-brown: #604e43;
+  --basic-focus-brown: #503e33;
 }
 
 /*Global*/
@@ -88,10 +90,6 @@ img {
 
 .site-navigation a:focus {
   color: var(--basic-darkgrey);
-}
-
-.site-navigation a:active {
-  color: var(--basic-brown);
 }
 
 /*trip to Sedona*/
@@ -168,11 +166,27 @@ img {
   line-height: 24px;
 }
 
-.booking-link {
+.button {
+  font-family: inherit;
   color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.booking-link {
   background-color: var(--basic-brown);
   font-size: 21px;
   line-height: 26px;
+}
+
+.booking-link:hover {
+  background-color: var(--basic-hover-brown);
+}
+
+.booking-link:focus {
+  background-color: var(--basic-focus-brown);
 }
 
 /*footer*/
@@ -196,11 +210,11 @@ img {
 }
 
 .social-button:hover {
-  color: var(--basic-hover);
+  color: var(--basic-hover-blue);
 }
 
 .social-button:focus {
-  color: var(--basic-focus);
+  color: var(--basic-focus-blue);
 }
 
 .footer-copyright {
@@ -230,15 +244,32 @@ img {
   border: none;
 }
 
+.selection-group {
+  list-style: none;
+}
+
 .selection-title {
   font-size: 16px;
 }
 
+.show-button {
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.show-button:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
 /*sort*/
 
-.sort-wrapp  {
-background-color: var(--basic-white);
+.sort-wrapp {
+  background-color: var(--basic-white);
 }
+
 .result-sort {
   font-size: 21px;
   line-height: 26px;
@@ -271,14 +302,50 @@ background-color: var(--basic-white);
   border-bottom: none;
 }
 
-.sort-title {
+.sort-title-link {
+  font-family: inherit;
   font-size: 21px;
   line-height: 26px;
+  color: var(--basic-black)
+}
+
+.sort-title-link:hover {
+  color: var(--basic-blue);
+}
+
+.sort-title-link:focus {
+  opacity: 0.3;
 }
 
 .sort-range, .sort-value {
   font-weight: 400;
 }
+
+.more-info {
+  background-color: var(--basic-blue);
+}
+
+.more-info:hover {
+  background-color: var(--basic-hover-blue);
+}
+
+.more-info:focus {
+  background-color: var(--basic-focus-blue);
+}
+
+.book-button {
+  background-color: var(--basic-brown);
+}
+
+.book-button:hover {
+  background-color: var(--basic-hover-brown);
+}
+
+.book-button:focus {
+  background-color: var(--basic-focus-brown);
+}
+
+/*footer catalog*/
 
 .footer-catalog {
   background-color: var(--basic-white);
