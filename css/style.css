@@ -40,9 +40,9 @@
   box-sizing: inherit;
 }
 
-body {
-  min-width: 1200px;
-  margin: 0;
+.page-body {
+  width: 1200px;
+  margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -96,4 +96,77 @@ img {
   background-image: url(../img/main_1_block/background_photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/*features*/
+
+.feature-text-block {
+  background-color: var(--basic-white);
+}
+
+.feature-heading {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.reasons-txt {
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.features-list {
+  padding: 0;
+  color: var(--basic-black);
+}
+
+.feature-city {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.feature-item-title {
+  margin-top: 0;
+  font-size: 21px;
+}
+
+.feature-item-txt {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.feature-item:last-child {
+  list-style: none;
+}
+
+.more-features {
+  list-style: none;
+  background-color: var(--basic-white);
+}
+
+.feature-block {
+  background-color: var(--basic-grey);
+}
+
+/*booking*/
+
+.booking {
+  background-color: var(--basic-white);
+}
+
+.booking-txt {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.booking-info {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.booking-link {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+  font-size: 21px;
+  line-height: 26px;
 }
