@@ -94,6 +94,15 @@ img {
 
 /*trip to Sedona*/
 
+.visually-hidden {
+  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .trip-sedona {
   background-image: url(../img/main_1_block/background_photo.jpg);
   background-size: cover;
