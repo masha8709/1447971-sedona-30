@@ -41,7 +41,7 @@
 }
 
 body {
-  min-width: 120px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -88,4 +88,12 @@ img {
 
 .site-navigation a:active {
   color: var(--basic-brown);
+}
+
+/*trip to Sedona*/
+
+.trip-sedona {
+  background-image: url(../img/main_1_block/background_photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
