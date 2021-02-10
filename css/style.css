@@ -52,10 +52,40 @@ body {
   text-transform: uppercase;
   background-color: var(--basic-grey-body);
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+/*Main navigation*/
+
+.main-navigation {
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style-type: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-darkgrey);
+}
+
+.site-navigation a:active {
+  color: var(--basic-brown);
 }
