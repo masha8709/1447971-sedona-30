@@ -270,15 +270,18 @@ text-align: center;*/
 }
 
 .map iframe {
-left: 0;
-top: 0;
-height: 594px;
-width: 100%;
-position: absolute;
+  left: 0;
+  top: 0;
+  height: 594px;
+  width: 100%;
+  position: absolute;
 }
+
 /*footer*/
 
 .main-footer {
+  margin-top: -138px;
+  z-index: 1;
   padding: 23px 138px 36px 111px;
   background-color: var(--basic-footer);
   display: grid;
