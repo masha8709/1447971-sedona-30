@@ -344,11 +344,12 @@ text-align: center;*/
 
 .selection-form {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .form-group {
   border: none;
+  padding: 0;
 }
 
 .selection-group {
@@ -376,7 +377,13 @@ text-align: center;*/
 /*sort*/
 
 .sort-wrapp {
+  padding: 30px 73px;
   background-color: var(--basic-white);
+}
+
+.selection-wrp {
+  display: flex;
+  margin-bottom: 60px;
 }
 
 .result-sort {
@@ -384,33 +391,66 @@ text-align: center;*/
   line-height: 26px;
 }
 
-.sort {
+.sort, .selection-list {
+  padding: 0;
+  margin: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
+.selection-list {
+  display: flex;
+}
+
+.selection-item {
+  list-style: none;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.sort-txt {
+  margin-left: 46px;
+}
 .sort-item {
+  margin-bottom: 30px;
   list-style: none;
   color: inherit;
+  display: grid;
+  grid-template-columns: max-content 1fr 1fr;
 }
 
-.sort-link {
+.sort-item:last-child {
+  margin-bottom: 0;
+}
+
+.sort-value {
+  text-align: right;
+}
+
+.sort-item-wrp {
+  padding-left: 37px;
+}
+
+.selection-item-link {
   border-bottom: 1px dashed var(--basic-blue);
   color: inherit;
   opacity: 0.3;
 }
 
-.sort-link:hover {
+.selection-item-link:hover {
   color: var(--basic-blue);
   opacity: 1;
 }
 
-.sort-link:focus {
+.selection-item-link:focus {
   opacity: 1;
   border-bottom: none;
+}
+
+.sort-title {
+  margin: 0;
+  margin-bottom: 7px;
 }
 
 .sort-title-link {
@@ -428,12 +468,19 @@ text-align: center;*/
   opacity: 0.3;
 }
 
+.sort-range {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
 .sort-range, .sort-value {
   font-weight: 400;
 }
 
 .more-info {
   background-color: var(--basic-blue);
+  padding: 3px 17px;
+  margin-right: 6px;
 }
 
 .more-info:hover {
@@ -446,6 +493,7 @@ text-align: center;*/
 
 .book-button {
   background-color: var(--basic-brown);
+  padding: 3px 17px;
 }
 
 .book-button:hover {
@@ -460,4 +508,5 @@ text-align: center;*/
 
 .footer-catalog {
   background-color: var(--basic-white);
+  margin-top: -11px;
 }
