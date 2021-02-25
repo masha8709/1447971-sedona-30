@@ -79,30 +79,41 @@ img {
   width: 100%;
   background-color: var(--basic-white);
   margin-bottom: 0;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
 }
 
 .main-navigation {
   line-height: 26px;
   color: var(--basic-black);
-  display: grid;
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .site-navigation {
+  padding: 15px 72px;
   list-style-type: none;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.site-navigation a {
+.site-navigation-item:nth-child(3),
+.site-navigation-item:nth-child(4) {
+  text-align: right;
+}
+
+.site-navigation-link {
   color: var(--basic-black);
 }
 
-.site-navigation a:hover {
+.site-navigation-link:hover {
   color: var(--basic-blue);
 }
 
-.site-navigation a:focus {
+.site-navigation-link:focus {
   color: var(--basic-darkgrey);
 }
 
