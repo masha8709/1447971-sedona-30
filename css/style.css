@@ -222,7 +222,7 @@ text-align: center;*/
 .booking {
   background-color: var(--basic-white);
   text-align: center;
-  padding: 58px 316px 30px;
+  padding: 58px 316px 0px;
 }
 
 .booking-txt {
@@ -247,6 +247,7 @@ text-align: center;*/
 }
 
 .booking-link {
+  display: block;
   background-color: var(--basic-brown);
   font-size: 21px;
   line-height: 26px;
