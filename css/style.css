@@ -298,11 +298,12 @@ text-align: center;*/
 .footer-social {
   list-style: none;
   display: flex;
+  justify-content: space-between;
 }
 
 .social-button {
   fill: var(--basic-blue);
-  justify-content: space-between;
+  margin-right: 6px;
 }
 
 .social-button:hover {
