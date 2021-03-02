@@ -198,16 +198,32 @@ img {
 }
 
 .feature-bridge {
-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
+
+.feature-item-wrp {
+  margin-left: 52px;
+  margin-right: 52px;
+}
+
 .feature-item-title {
-  margin-top: 0;
+  margin-top: 47px;
+  margin-bottom: 25px;
   font-size: 21px;
+  text-align: center;
 }
 
 .feature-item-txt {
   font-weight: normal;
+  margin-top: 25px;
   margin-bottom: 0;
+  text-align: center;
+}
+
+.feature-item-number {
+  display: block;
+  text-align: center;
+  font-weight: 400;
 }
 
 .feature-item:last-child {
@@ -215,15 +231,41 @@ flex-direction: row-reverse;
 }
 
 .more-features {
+  padding: 0;
   list-style: none;
   background-color: var(--basic-white);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 168px;
+  column-gap: 113px;
 }
 
 .feature-block {
   background-color: var(--basic-grey);
+}
+
+.feature-block-square {
+  padding-left: 96px;
+  padding-right: 168px;
+  padding-bottom: 54px;
+}
+
+.feature-block-road {
+  padding-right: 148px;
+  padding-bottom: 54px;
+}
+
+.feature-block-people {
+  padding-right: 77px;
+  padding-bottom: 54px;
+}
+
+.feature-block-house {
+  padding-left: 73px;
+  padding-bottom: 82px;
+}
+
+.feature-block-souvenir {
+  padding-right: 65px;
 }
 
 /*booking*/
