@@ -121,7 +121,7 @@ img {
 .visually-hidden {
   visibility: hidden;
   position: absolute;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -164,7 +164,7 @@ img {
   color: var(--basic-black);
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .feature-city, .feature-bridge {
