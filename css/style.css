@@ -192,6 +192,14 @@ img {
   grid-row: 2/3;
   grid-column: 1/4;
 }
+
+.feature-city, .feature-bridge {
+  display: flex;
+}
+
+.feature-bridge {
+flex-direction: row-reverse;
+}
 .feature-item-title {
   margin-top: 0;
   font-size: 21px;
