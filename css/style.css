@@ -71,6 +71,7 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  box-sizing: border-box;
 }
 
 /*Main navigation*/
@@ -249,20 +250,20 @@ img {
 }
 
 .feature-block-square {
-  width: 327px;
+  width: 400px;
   padding-left: 96px;
   padding-bottom: 54px;
 }
 
 .feature-block-road {
-  width: 327px;
+  width: 400px;
   padding-bottom: 54px;
   padding-right: 37px;
   padding-left: 37px;
 }
 
 .feature-block-people {
-  width: 327px;
+  width: 400px;
   padding-right: 77px;
   padding-bottom: 54px;
 }
