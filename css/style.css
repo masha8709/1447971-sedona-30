@@ -401,6 +401,9 @@ img {
   column-gap: 145px;
 }
 
+.footer-contacts {
+  text-align: center;
+}
 .footer-insta, .footer-phone {
   color: inherit;
   font-size: 21px;
@@ -582,10 +585,12 @@ img {
 }
 .range-controls .toggle-min {
   left: 0px;
+  outline: none;
 }
 
 .range-controls .toggle-max {
   left: 240px;
+  outline: none;
 }
 .show-button {
   background-color: transparent;
