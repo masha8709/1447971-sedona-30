@@ -150,7 +150,6 @@ img {
   content: "";
   position: absolute;
   background-image: url(../img/main_1_block/background_down.png);
-  z-index: 5;
   width: 1200px;
   height: 57px;
   bottom: 0;
@@ -282,14 +281,51 @@ img {
   padding-right: 77px;
   padding-bottom: 54px;
 }
+.more-feature-item {
+  padding-top: 160px;
+}
 
 .feature-block-house {
   padding-left: 73px;
   padding-bottom: 82px;
+  position: relative;
+}
+.feature-block-house:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/main_2_block/icon_house.svg);
+  width: 75px;
+  height: 72px;
+  top: 104px;
+  right: 89px;
+}
+
+.feature-block-food {
+  position: relative;
+}
+.feature-block-food:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/main_2_block/icon-food.svg);
+  width: 75px;
+  height: 72px;
+  top: 109px;
+  right: 127px;
 }
 
 .feature-block-souvenir {
   padding-right: 65px;
+  position: relative;
+}
+
+.feature-block-souvenir:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/main_2_block/icon-gift.svg);
+  width: 64px;
+  height: 77px;
+  top: 109px;
+  left: 102px;
 }
 
 /*booking*/
