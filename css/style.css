@@ -91,6 +91,7 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .site-navigation {
@@ -134,12 +135,26 @@ img {
 
 
 .trip-sedona {
+  width: 100%;
+  min-height: 509px;
   background-image: url(../img/main_1_block/background_photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 80px;
   padding-bottom: 80px;
+  position: relative;
+}
+
+.trip-sedona:after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/main_1_block/background_down.png);
+  z-index: 5;
+  width: 1200px;
+  height: 57px;
+  bottom: 0;
+  left: 0px;
 }
 
 /*features*/
