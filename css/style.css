@@ -446,7 +446,7 @@ img {
 /*selection*/
 
 .selection {
-  padding: 12px 73px 32px;
+  padding: 27px 73px 5px;
   background-image: url(../img/main_catalog/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -467,6 +467,48 @@ img {
   list-style: none;
   padding: 0;
 }
+.item-option {
+  padding-left: 38px;
+  margin-bottom: 25px;
+}
+.selection-item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label:before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+.filter-input-checkbox:checked + label:before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 2px solid transparent;
+}
+.filter-input-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -35px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/main_catalog/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 
 .selection-title {
   font-size: 16px;
@@ -516,8 +558,7 @@ img {
 
 .selection-item {
   list-style: none;
-  margin-left: 40px;
-  margin-right: 40px;
+  
 }
 
 .sort-txt {
