@@ -29,7 +29,7 @@
 
   <main class="container">
     <section class="selection">
-      <form action="#" class="selection-form">
+      <form action="#" class="selection-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="form-group">
           <legend class="selection-title">Инфраструктура:</legend>
           <ul class="selection-group">
@@ -66,12 +66,21 @@
         </fieldset>
         <fieldset class="form-group">
           <legend class="selection-title">Стоимость в сутки (р):</legend>
-          <input type="text" value="от 0" id="minprice">
-          <label for="minprice"></label>
-          <input type="text" value="до 3000" id="maxprice">
-          <label for="maxprice"></label>
-          <div></div>
-          <!--здесь будет бегунок-->
+          <div class="price-wrp">
+            <input type="text" value="от 0" id="minprice" class="minprice">
+            <label for="minprice"></label>
+            <input type="text" value="до 3000" id="maxprice" class="maxprice">
+            <label for="maxprice"></label>
+          </div>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+          </div>
           <input type="submit" value="Показать" class="button show-button">
         </fieldset>
       </form>
