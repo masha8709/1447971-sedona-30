@@ -100,7 +100,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.site-navigation-item:nth-child(3), .site-navigation-item:nth-child(4) {
+.site-navigation-item:nth-child(4n+3), .site-navigation-item:nth-child(4n+4) {
   text-align: right;
 }
 
