@@ -612,6 +612,7 @@ img {
 .selection-wrp {
   display: flex;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
 .result-sort {
@@ -628,12 +629,55 @@ img {
 }
 
 .selection-list {
+  width: 727px;
   display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
 }
 
 .selection-item {
   list-style: none;
-  
+  margin-right: 32px;
+}
+.selection-item-up {
+  margin-left: 471px;
+}
+
+.selection-item-up, .selection-item-down {
+  position: relative;
+  cursor: pointer;
+}
+.selection-item-up:before {
+  content: "";
+  position: absolute;
+  border: 6px solid transparent;
+  border-bottom: 10px solid #cacaca;
+  right: -262px;
+  bottom: 12px;
+}
+.selection-item-down:before {
+  content: "";
+  position: absolute;
+  border: 6px solid transparent;
+  border-top: 10px solid #cacaca;
+  right: -262px;
+  bottom: 6px;
+}
+.selection-item-up:hover:before {
+  border: 6px solid transparent;
+  border-bottom: 10px solid var(--basic-black);
+}
+.selection-item-down:hover:before {
+  border: 6px solid transparent;
+  border-top: 10px solid var(--basic-black);
+}
+.selection-item-up:focus:before {
+  border: 6px solid transparent;
+  border-bottom: 10px solid var(--basic-blue);
+}
+.selection-item-down:focus:before {
+  border: 6px solid transparent;
+  border-top: 10px solid var(--basic-blue);
 }
 
 .sort-txt {
@@ -654,6 +698,39 @@ img {
 
 .sort-value {
   text-align: right;
+  width: 100px;
+  margin-left: 364px;
+  margin-top: 75px;
+}
+.sort-five-stars,
+.sort-three-stars,
+.sort-two-stars {
+  position: relative;
+}
+.sort-five-stars:before, 
+.sort-three-stars:before, 
+.sort-two-stars:before {
+  content: "";
+  position: absolute;
+  width: 91px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.sort-five-stars:before {
+  top: -74px;
+  left: 10px;
+  background-image: url(../img/main_catalog/5_stars.svg);
+}
+.sort-three-stars:before {
+  top: -74px;
+  left: 35px;
+  background-image: url(../img/main_catalog/3_stars.svg);
+}
+.sort-two-stars:before {
+  top: -74px;
+  left: 60px;
+  background-image: url(../img/main_catalog/2_stars.svg);
 }
 
 .sort-item-wrp {
