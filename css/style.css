@@ -120,7 +120,7 @@ img {
 
 /*trip to Sedona*/
 
-  .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -132,7 +132,6 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 .trip-sedona {
   width: 100%;
@@ -281,6 +280,7 @@ img {
   padding-right: 77px;
   padding-bottom: 54px;
 }
+
 .more-feature-item {
   padding-top: 160px;
 }
@@ -290,6 +290,7 @@ img {
   padding-bottom: 82px;
   position: relative;
 }
+
 .feature-block-house:before {
   content: "";
   position: absolute;
@@ -303,6 +304,7 @@ img {
 .feature-block-food {
   position: relative;
 }
+
 .feature-block-food:before {
   content: "";
   position: absolute;
@@ -404,6 +406,7 @@ img {
 .footer-contacts {
   text-align: center;
 }
+
 .footer-insta, .footer-phone {
   color: inherit;
   font-size: 21px;
@@ -466,6 +469,7 @@ img {
   padding: 0;
   margin: 0;
 }
+
 .form-group:last-child {
   margin-left: 300px;
 }
@@ -475,20 +479,24 @@ img {
   padding: 0;
   margin-top: 25px;
 }
+
 .item-option {
   padding-left: 38px;
   margin-bottom: 25px;
 }
+
 .selection-item label {
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
 }
+
 .filter-input-checkbox {
   margin-bottom: 23px;
 }
-.filter-input-checkbox + label:before {
+
+.filter-input-checkbox+label:before {
   content: "";
   position: absolute;
   left: -35px;
@@ -498,7 +506,8 @@ img {
   border: 2px solid #fff;
   border-radius: 3px;
 }
-.filter-input-checkbox:checked + label:before {
+
+.filter-input-checkbox:checked+label:before {
   content: "";
   position: absolute;
   left: -35px;
@@ -507,7 +516,8 @@ img {
   height: 23px;
   border: 2px solid transparent;
 }
-.filter-input-checkbox:checked + label:after {
+
+.filter-input-checkbox:checked+label:after {
   content: "";
   position: absolute;
   top: 0px;
@@ -519,7 +529,6 @@ img {
   background-position: 0 0;
 }
 
-
 .selection-title {
   font-size: 16px;
 }
@@ -528,11 +537,12 @@ img {
   width: 320px;
   margin-top: 10px;
   padding-top: 7px;
-  padding-bottom: 7px; 
+  padding-bottom: 7px;
   border: 2px solid #fff;
   border-radius: 2px;
   position: relative;
 }
+
 .maxprice {
   margin-left: -4px;
 }
@@ -545,6 +555,7 @@ img {
   color: #fff;
   text-transform: uppercase;
 }
+
 .price-wrp:before {
   content: "";
   border-left: 2px solid #fff;
@@ -558,6 +569,7 @@ img {
   width: 318px;
   margin-top: 25px;
 }
+
 .range-controls {
   position: relative;
 }
@@ -566,11 +578,13 @@ img {
   height: 2px;
   background: rgba(255, 255, 255, 0.3)
 }
+
 .range-controls .bar {
   width: 248px;
   height: 2px;
   background: white;
 }
+
 .range-controls .toggle {
   position: absolute;
   top: -6px;
@@ -583,6 +597,7 @@ img {
   box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
+
 .range-controls .toggle-min {
   left: 0px;
   outline: none;
@@ -592,6 +607,7 @@ img {
   left: 240px;
   outline: none;
 }
+
 .show-button {
   background-color: transparent;
   border: 2px solid var(--basic-white);
@@ -644,6 +660,7 @@ img {
   list-style: none;
   margin-right: 32px;
 }
+
 .selection-item-up {
   margin-left: 471px;
 }
@@ -652,6 +669,7 @@ img {
   position: relative;
   cursor: pointer;
 }
+
 .selection-item-up:before {
   content: "";
   position: absolute;
@@ -660,6 +678,7 @@ img {
   right: -262px;
   bottom: 12px;
 }
+
 .selection-item-down:before {
   content: "";
   position: absolute;
@@ -668,18 +687,22 @@ img {
   right: -262px;
   bottom: 6px;
 }
+
 .selection-item-up:hover:before {
   border: 6px solid transparent;
   border-bottom: 10px solid var(--basic-black);
 }
+
 .selection-item-down:hover:before {
   border: 6px solid transparent;
   border-top: 10px solid var(--basic-black);
 }
+
 .selection-item-up:focus:before {
   border: 6px solid transparent;
   border-bottom: 10px solid var(--basic-blue);
 }
+
 .selection-item-down:focus:before {
   border: 6px solid transparent;
   border-top: 10px solid var(--basic-blue);
@@ -707,14 +730,12 @@ img {
   margin-left: 364px;
   margin-top: 75px;
 }
-.sort-five-stars,
-.sort-three-stars,
-.sort-two-stars {
+
+.sort-five-stars, .sort-three-stars, .sort-two-stars {
   position: relative;
 }
-.sort-five-stars:before, 
-.sort-three-stars:before, 
-.sort-two-stars:before {
+
+.sort-five-stars:before, .sort-three-stars:before, .sort-two-stars:before {
   content: "";
   position: absolute;
   width: 91px;
@@ -722,16 +743,19 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .sort-five-stars:before {
   top: -74px;
   left: 10px;
   background-image: url(../img/main_catalog/5_stars.svg);
 }
+
 .sort-three-stars:before {
   top: -74px;
   left: 35px;
   background-image: url(../img/main_catalog/3_stars.svg);
 }
+
 .sort-two-stars:before {
   top: -74px;
   left: 60px;
