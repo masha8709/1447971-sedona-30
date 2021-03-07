@@ -26,6 +26,8 @@
   --basic-footer: rgba(255, 255, 255, 0.9);
   --basic-darkgrey: #a9a9a9;
   --basic-grey-modal: #f2f2f2;
+  --basic-grey-modal-hover: #ebebeb;
+  --basic-grey-modal-border: #e5e5e5;
   --basic-darkbrown: #333333;
   --special: #666666;
   --basic-focus-logo: #bdbbbc;
@@ -336,6 +338,7 @@ img {
   background-color: var(--basic-white);
   text-align: center;
   padding: 58px 316px 0px;
+  position: relative;
 }
 
 .booking-txt {
@@ -373,6 +376,154 @@ img {
 
 .booking-link:focus {
   background-color: var(--basic-focus-brown);
+}
+
+.booking-form {
+  width: 568px;
+  padding: 55px 55px;
+  background-color: var(--basic-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  position: absolute;
+  z-index: 1;
+}
+
+.booking-item {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-check-in, .booking-check-out {
+  width: 346px;
+  border: 2px solid var(--basic-grey-modal);
+  background-color: var(--basic-grey-modal);
+  padding: 6px 7px 6px 13px;
+  outline: none;
+}
+
+.booking-check-in:hover, .booking-check-out:hover, .number-of-adults:hover, .number-of-children:hover {
+  background-color: var(--basic-grey-modal-hover);
+}
+
+.booking-check-in:focus, .booking-check-out:focus, .number-of-adults:focus, .number-of-children:focus {
+  border: 2px solid var(--basic-grey-modal-border);
+  background-color: transparent;
+}
+
+input.booking-txt-color::placeholder {
+  color: var(--basic-black);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.date-check-in, .date-check-out {
+  position: relative;
+}
+
+.calendar-check-in, .calendar-check-out {
+  position: absolute;
+  fill: var(--basic-darkgrey);
+  cursor: pointer;
+  right: 67px;
+}
+
+.calendar-check-in {
+  top: 72px;
+}
+
+.calendar-check-out {
+  top: 134px;
+}
+
+.calendar-check-in:hover, .calendar-check-out:hover {
+  fill: var(--basic-black);
+}
+
+/*.calendar-check-in:focus, .calendar-check-out:focus {
+  fill: var(--basic-blue);
+}*/
+
+.number-of-adults, .number-of-children {
+  border: 2px solid var(--basic-grey-modal);
+  width: 114px;
+  text-align: center;
+  background-color: var(--basic-grey-modal);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  outline: none;
+}
+
+.range-adults, .range-children {
+  position: relative;
+}
+
+.range-adults:before, .range-children:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 12px;
+  background-color: var(--basic-darkgrey);
+  cursor: pointer;
+}
+
+.range-adults:after, .range-children:after {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background-image: url(../img/main_3_block/union.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.range-adults:before {
+  top: 9px;
+  left: 128px;
+}
+
+.range-adults:after {
+  top: 5px;
+  right: -137px;
+}
+
+.range-children:before {
+  top: 9px;
+  left: 96px;
+}
+
+.range-children:after {
+  top: 5px;
+  right: -138px;
+}
+
+/*.range-adults:hover:before {
+  background-color: var(--basic-black);
+}
+
+.range-adults:hover:after {
+  filter: hue-rotate(360deg);
+}*/
+
+.booking-btn {
+  width: 458px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 24px;
+  background-color: var(--basic-blue);
+}
+
+.booking-btn:hover {
+  background-color: var(--basic-hover-blue);
+}
+
+.booking-btn:focus {
+  background-color: var(--basic-focus-blue);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* MAP*/
