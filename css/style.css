@@ -705,6 +705,7 @@ input.booking-txt-color::placeholder {
   background-color: transparent;
   color: #fff;
   text-transform: uppercase;
+  outline: none;
 }
 
 .price-wrp:before {
