@@ -39,6 +39,7 @@
   --basic-range-control: #ababab;
   --basic-bgcolor-for-catalog: #5a86aa;
   --basic-bgcolor-for-index: #e5F2fa;
+  --basic-disabled-input: #6a6a6a;
 }
 
 /*Global*/
@@ -661,7 +662,7 @@ input.booking-txt-color::placeholder {
   top: 0;
   width: 23px;
   height: 23px;
-  border: 2px solid #fff;
+  border: 2px solid var(--basic-white);
   border-radius: 3px;
 }
 
@@ -687,6 +688,28 @@ input.booking-txt-color::placeholder {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:disabled+label:before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  border: 2px solid var(--basic-disabled-input);
+}
+
+.filter-input-checkbox:disabled+label:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -35px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/main_catalog/checkbox-on-disabled.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .selection-title {
   font-size: 16px;
 }
@@ -696,7 +719,7 @@ input.booking-txt-color::placeholder {
   margin-top: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
-  border: 2px solid #fff;
+  border: 2px solid var(--basic-white);
   border-radius: 2px;
   position: relative;
 }
@@ -717,7 +740,7 @@ input.booking-txt-color::placeholder {
 
 .price-wrp:before {
   content: "";
-  border-left: 2px solid #fff;
+  border-left: 2px solid var(--basic-white);
   height: 22px;
   position: absolute;
   top: 7px;
@@ -735,13 +758,13 @@ input.booking-txt-color::placeholder {
 
 .range-controls .scale {
   height: 2px;
-  background: rgba(255, 255, 255, 0.3)
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 248px;
   height: 2px;
-  background: white;
+  background: var(--basic-white);
 }
 
 .range-controls .toggle {
@@ -765,6 +788,10 @@ input.booking-txt-color::placeholder {
 .range-controls .toggle-max {
   left: 240px;
   outline: none;
+}
+
+.range-controls .toggle:hover {
+  transform: scale(1.2);
 }
 
 .show-button {
