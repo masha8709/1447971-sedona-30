@@ -40,6 +40,7 @@
   --basic-bgcolor-for-catalog: #5a86aa;
   --basic-bgcolor-for-index: #e5F2fa;
   --basic-disabled-input: #6a6a6a;
+  --basic-sort-grey: #cacaca;
 }
 
 /*Global*/
@@ -121,6 +122,10 @@ img {
 }
 
 .site-navigation-link:focus {
+  color: var(--basic-brown);
+}
+
+.site-navigation-link:active {
   color: var(--basic-darkgrey);
 }
 
@@ -379,8 +384,9 @@ img {
   background-color: var(--basic-hover-brown);
 }
 
-.booking-link:focus {
+.booking-link:active {
   background-color: var(--basic-focus-brown);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .booking-form {
@@ -448,9 +454,9 @@ input.booking-txt-color::placeholder {
   fill: var(--basic-black);
 }
 
-/*.calendar-check-in:focus, .calendar-check-out:focus {
+.calendar-check-in:active, .calendar-check-out:active {
   fill: var(--basic-blue);
-}*/
+}
 
 .number-of-adults, .number-of-children {
   border: 2px solid var(--basic-grey-modal);
@@ -506,13 +512,21 @@ input.booking-txt-color::placeholder {
   right: -138px;
 }
 
-/*.range-adults:hover:before {
+.range-adults:hover:before, .range-children:hover:before {
   background-color: var(--basic-black);
 }
 
-.range-adults:hover:after {
-  filter: hue-rotate(360deg);
-}*/
+.range-adults:hover:after, .range-children:hover:after {
+  filter: invert(1);
+}
+
+.range-adults:active:before, .range-children:active:before {
+  background-color: var(--basic-blue);
+}
+
+.range-adults:active:after, .range-children:active:after {
+  filter: brightness(0.9) invert(.9) sepia(.9) hue-rotate(156deg) saturate(253%);
+}
 
 .booking-btn {
   width: 458px;
@@ -584,7 +598,7 @@ input.booking-txt-color::placeholder {
   fill: var(--basic-hover-blue);
 }
 
-.social-button:focus {
+.social-button:active {
   fill: var(--basic-focus-blue);
 }
 
@@ -847,6 +861,25 @@ input.booking-txt-color::placeholder {
   margin-right: 32px;
 }
 
+.selection-item-link {
+  border-bottom: 1px dashed var(--basic-blue);
+  color: var(--basic-sort-grey);
+}
+
+.selection-item-link:hover {
+  color: var(--basic-blue);
+}
+
+.selection-item-link:focus {
+  color: var(--basic-blue);
+  border-bottom: none;
+}
+
+.selection-item-link:active {
+  color: var(--basic-black);
+  border-bottom: none;
+}
+
 .selection-item-up {
   margin-left: 471px;
 }
@@ -856,21 +889,20 @@ input.booking-txt-color::placeholder {
   cursor: pointer;
 }
 
-.selection-item-up:before {
+.selection-item-up:before, .selection-item-down:before {
   content: "";
   position: absolute;
   border: 6px solid transparent;
-  border-bottom: 10px solid #cacaca;
   right: -262px;
+}
+
+.selection-item-up:before {
+  border-bottom: 10px solid var(--basic-sort-grey);
   bottom: 12px;
 }
 
 .selection-item-down:before {
-  content: "";
-  position: absolute;
-  border: 6px solid transparent;
-  border-top: 10px solid #cacaca;
-  right: -262px;
+  border-top: 10px solid var(--basic-sort-grey);
   bottom: 6px;
 }
 
@@ -890,6 +922,16 @@ input.booking-txt-color::placeholder {
 }
 
 .selection-item-down:focus:before {
+  border: 6px solid transparent;
+  border-top: 10px solid var(--basic-blue);
+}
+
+.selection-item-up:active:before {
+  border: 6px solid transparent;
+  border-bottom: 10px solid var(--basic-blue);
+}
+
+.selection-item-down:active:before {
   border: 6px solid transparent;
   border-top: 10px solid var(--basic-blue);
 }
@@ -952,22 +994,6 @@ input.booking-txt-color::placeholder {
   padding-left: 37px;
 }
 
-.selection-item-link {
-  border-bottom: 1px dashed var(--basic-blue);
-  color: inherit;
-  opacity: 0.3;
-}
-
-.selection-item-link:hover {
-  color: var(--basic-blue);
-  opacity: 1;
-}
-
-.selection-item-link:focus {
-  opacity: 1;
-  border-bottom: none;
-}
-
 .sort-title {
   margin: 0;
   margin-bottom: 7px;
@@ -984,8 +1010,8 @@ input.booking-txt-color::placeholder {
   color: var(--basic-blue);
 }
 
-.sort-title-link:focus {
-  opacity: 0.3;
+.sort-title-link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sort-range {
@@ -1007,8 +1033,9 @@ input.booking-txt-color::placeholder {
   background-color: var(--basic-hover-blue);
 }
 
-.more-info:focus {
+.more-info:active {
   background-color: var(--basic-focus-blue);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .book-button {
@@ -1020,8 +1047,9 @@ input.booking-txt-color::placeholder {
   background-color: var(--basic-hover-brown);
 }
 
-.book-button:focus {
+.book-button:active {
   background-color: var(--basic-focus-brown);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*footer catalog*/
