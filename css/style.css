@@ -37,6 +37,8 @@
   --basic-focus-brown: #503e33;
   --basic-black-logo-footer: #231F20;
   --basic-range-control: #ababab;
+  --basic-bgcolor-for-catalog: #5a86aa;
+  --basic-bgcolor-for-index: #e5F2fa;
 }
 
 /*Global*/
@@ -139,6 +141,7 @@ img {
 .trip-sedona {
   width: 100%;
   min-height: 509px;
+  background-color: var(--basic-bgcolor-for-index);
   background-image: url(../img/main_1_block/background_photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -607,6 +610,7 @@ input.booking-txt-color::placeholder {
 
 .selection {
   padding: 27px 73px 5px;
+  background-color: var(--basic-bgcolor-for-catalog);
   background-image: url(../img/main_catalog/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
