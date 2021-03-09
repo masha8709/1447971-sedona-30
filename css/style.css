@@ -36,6 +36,7 @@
   --basic-hover-brown: #604e43;
   --basic-focus-brown: #503e33;
   --basic-black-logo-footer: #231F20;
+  --basic-range-control: #ababab;
 }
 
 /*Global*/
@@ -705,7 +706,7 @@ input.booking-txt-color::placeholder {
   border: none;
   text-align: center;
   background-color: transparent;
-  color: #fff;
+  color: var(--basic-white);
   text-transform: uppercase;
   outline: none;
 }
@@ -745,8 +746,8 @@ input.booking-txt-color::placeholder {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-range-control);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.3);
   cursor: pointer;
