@@ -567,6 +567,7 @@ input.booking-txt-color::placeholder {
 .footer-social {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social-button {
@@ -584,6 +585,7 @@ input.booking-txt-color::placeholder {
 
 .footer-copyright {
   line-height: 26px;
+  text-align: center;
 }
 
 .footer-logo {
