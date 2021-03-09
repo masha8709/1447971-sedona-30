@@ -432,11 +432,11 @@ input.booking-txt-color::placeholder {
 }
 
 .calendar-check-in {
-  top: 72px;
+  top: 57px;
 }
 
 .calendar-check-out {
-  top: 134px;
+  top: 120px;
 }
 
 .calendar-check-in:hover, .calendar-check-out:hover {
