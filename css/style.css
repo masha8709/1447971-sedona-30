@@ -63,6 +63,7 @@ img {
 }
 
 .page-body {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -852,7 +853,7 @@ input.booking-txt-color::placeholder {
   position: absolute;
   width: 1200px;
   border-bottom: 1px solid var(--basic-grey-modal-border);
-  bottom: 5px;
+  bottom: 2px;
   left: 0px;
 }
 
@@ -1042,6 +1043,7 @@ input.booking-txt-color::placeholder {
 .sort-title {
   margin: 0;
   margin-bottom: 5px;
+  margin-top: -4px;
 }
 
 .sort-title-link {
@@ -1062,7 +1064,7 @@ input.booking-txt-color::placeholder {
 .sort-range-wrp {
   width: 260px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-weight: 400;
   font-size: 14px;
   display: flex;
@@ -1107,5 +1109,5 @@ input.booking-txt-color::placeholder {
 
 .footer-catalog {
   background-color: var(--basic-white);
-  margin-top: -5px;
+  margin-top: -2px;
 }
