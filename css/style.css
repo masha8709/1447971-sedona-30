@@ -275,12 +275,11 @@ img {
 }
 
 .more-features {
-  padding: 112px 65px 83px 73px;
-  -moz-padding-start: 60px;
+  padding: 112px 30px 83px 65px;
   list-style: none;
   background-color: var(--basic-white);
   display: grid;
-  grid-template-columns: 269px 533px 338px;
+  grid-template-columns: 269px 498px 338px;
 }
 
 .feature-block {
@@ -318,8 +317,8 @@ img {
 
 .feature-block-food {
   position: relative;
-  margin-left: 121px;
-  margin-right: 124px;
+  margin-left: 118px;
+  margin-right: 82px;
 }
 
 .feature-block-food:before {
@@ -329,12 +328,12 @@ img {
   width: 75px;
   height: 72px;
   top: -51px;
-  right: 106px;
+  right: 113px;
 }
 
 .feature-block-souvenir {
   position: relative;
-  margin-right: 69px;
+  margin-right: 0px;
 }
 
 .feature-block-souvenir:before {
@@ -344,7 +343,7 @@ img {
   width: 64px;
   height: 77px;
   top: -57px;
-  left: 100px;
+  left: 136px;
 }
 
 /*booking*/
