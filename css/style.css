@@ -382,7 +382,6 @@ img {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
-  outline: none;
 }
 
 .booking-link {
@@ -423,7 +422,6 @@ img {
   border: 2px solid var(--basic-grey-modal);
   background-color: var(--basic-grey-modal);
   padding: 8px 6px 11px 10px;
-  outline: none;
 }
 
 .booking-check-in:hover, .booking-check-out:hover, .number-of-adults:hover, .number-of-children:hover {
@@ -519,7 +517,6 @@ input.booking-txt-color::placeholder {
   border: none;
   position: absolute;
   z-index: 1;
-  outline: none;
 }
 
 .range-adults-plus:hover, .range-children-plus:hover {
@@ -826,12 +823,10 @@ input.booking-txt-color::placeholder {
 
 .range-controls .toggle-min {
   left: 0px;
-  outline: none;
 }
 
 .range-controls .toggle-max {
   left: 253px;
-  outline: none;
 }
 
 .range-controls .toggle:hover {
