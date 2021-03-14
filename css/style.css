@@ -810,10 +810,10 @@ input.booking-txt-color::placeholder {
 .range-controls .toggle {
   position: absolute;
   top: -9px;
-  width: 4px;
-  height: 4px;
+  width: 19px;
+  height: 19px;
   padding: 0;
-  border: 9px solid var(--basic-white);
+  border: 7px solid var(--basic-white);
   background-color: var(--basic-range-control);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.3);
