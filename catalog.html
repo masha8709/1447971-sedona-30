@@ -34,15 +34,15 @@
           <legend class="selection-title">Инфраструктура:</legend>
           <ul class="selection-group">
             <li class="selection-item item-option">
-              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="pool" checked>
+              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="pool" name="pool" checked>
               <label for="pool">Бассейн</label>
             </li>
             <li class="selection-item item-option">
-              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="parking">
+              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="parking" name="parking">
               <label for="parking">Парковка</label>
             </li>
             <li class="selection-item item-option">
-              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="wifi">
+              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="wifi" name="wifi">
               <label for="wifi">Wi-fi</label>
             </li>
           </ul>
@@ -51,15 +51,15 @@
           <legend class="selection-title">Тип жилья:</legend>
           <ul class="selection-group">
             <li class="selection-item item-option">
-              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="hotel" checked>
+              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="hotel" name="hotel" checked>
               <label for="hotel">Гостиница</label>
             </li>
             <li class="selection-item item-option">
-              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="motel" checked>
+              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="motel" name="motel" checked>
               <label for="motel">Мотель</label>
             </li>
             <li class="selection-item item-option">
-              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="apartments" checked>
+              <input type="checkbox" class="visually-hidden filter-input-checkbox" id="apartments" name="apartments" checked>
               <label for="apartments">Апартаменты</label>
             </li>
           </ul>
@@ -67,9 +67,9 @@
         <fieldset class="form-group">
           <legend class="selection-title">Стоимость в сутки (р):</legend>
           <div class="price-wrp">
-            <input type="text" value="от 0" id="minprice" class="minprice">
+            <input type="text" placeholder="от 0" id="minprice" class="minprice" name="Минимальная цена">
             <label for="minprice"></label>
-            <input type="text" value="до 3000" id="maxprice" class="maxprice">
+            <input type="text" placeholder="до 3000" id="maxprice" class="maxprice" name="Максимальная цена">
             <label for="maxprice"></label>
           </div>
           <div class="range-filter">
@@ -77,8 +77,8 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="toggle toggle-min" tabindex="0"></div>
-              <div class="toggle toggle-max" tabindex="0"></div>
+              <button class="toggle toggle-min" aria-label="Увеличить цену за сутки"></button>
+              <button class="toggle toggle-max" aria-label="Уменьшить цену за сутки"></button>
             </div>
           </div>
           <input type="submit" value="Показать" class="button show-button">
@@ -101,10 +101,14 @@
             <a href="#" class="selection-item-link">По рейтингу</a>
           </li>
           <li class="selection-item">
-            <a href="#" class="item-up"></a>
+            <a href="#" class="item-up" aria-label="Сортировать по порядку"></a>
           </li>
           <li class="selection-item">
-            <a href="#" class="item-down"></a>
+            <a href="#" class="item-down item-down-active" aria-label="Сортировать в обратном порядке">
+              <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" />
+              </svg>
+            </a>
           </li>
         </ul>
       </div>

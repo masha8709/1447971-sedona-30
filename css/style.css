@@ -432,7 +432,7 @@ img {
   background-color: transparent;
 }
 
-input.booking-txt-color::placeholder {
+.booking-txt-color::placeholder {
   color: var(--basic-black);
   font-family: inherit;
   font-weight: 700;
@@ -451,6 +451,7 @@ input.booking-txt-color::placeholder {
   cursor: pointer;
   right: 58px;
   border: none;
+  outline: none;
 }
 
 .calendar-check-in {
@@ -463,6 +464,10 @@ input.booking-txt-color::placeholder {
 
 .calendar-check-in:hover, .calendar-check-out:hover {
   fill: var(--basic-black);
+}
+
+.calendar-check-in:focus, .calendar-check-out:focus {
+  fill: var(--basic-blue);
 }
 
 .calendar-check-in:active, .calendar-check-out:active {
@@ -516,10 +521,15 @@ input.booking-txt-color::placeholder {
   border: none;
   position: absolute;
   z-index: 1;
+  outline: none;
 }
 
 .range-adults-plus:hover, .range-children-plus:hover {
   fill: var(--basic-black);
+}
+
+.range-adults-plus:focus, .range-children-plus:focus {
+  fill: var(--basic-blue);
 }
 
 .range-adults-plus:active, .range-children-plus:active {
@@ -545,8 +555,16 @@ input.booking-txt-color::placeholder {
   background-color: var(--basic-black);
 }
 
+.range-adults-minus:focus:before, .range-children-minus:focus:before {
+  background-color: var(--basic-blue);
+}
+
 .range-adults-minus:active:before, .range-children-minus:active:before {
   background-color: var(--basic-blue);
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .booking-btn {
@@ -575,12 +593,17 @@ input.booking-txt-color::placeholder {
   height: 0;
 }
 
-.map iframe {
+.map-link {
   left: 0;
   top: 0;
   height: 594px;
   width: 100%;
   position: absolute;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 /*footer*/
@@ -706,6 +729,10 @@ input.booking-txt-color::placeholder {
   border-radius: 3px;
 }
 
+.filter-input-checkbox:focus+label:before {
+  outline: 2px solid var(--basic-blue);
+}
+
 .filter-input-checkbox:checked+label:before {
   content: "";
   position: absolute;
@@ -755,10 +782,12 @@ input.booking-txt-color::placeholder {
 }
 
 .price-wrp {
+  display: flex;
+  align-items: center;
   width: 317px;
-  margin-top: 10px;
-  padding-top: 5px;
-  padding-bottom: 7px;
+  margin-top: 11px;
+  padding-top: 7px;
+  padding-bottom: 9px;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   position: relative;
@@ -770,6 +799,7 @@ input.booking-txt-color::placeholder {
 
 .minprice, .maxprice {
   padding: 0;
+  padding-left: 3px;
   border: none;
   text-align: center;
   background-color: transparent;
@@ -778,13 +808,18 @@ input.booking-txt-color::placeholder {
   outline: none;
 }
 
+.minprice::placeholder, .maxprice::placeholder {
+  color: var(--basic-white);
+}
+
 .price-wrp:before {
   content: "";
   border-left: 2px solid var(--basic-white);
   height: 22px;
   position: absolute;
-  top: 7px;
+  top: 15%;
   left: 50%;
+  transform: translate(-50%);
 }
 
 .range-filter {
@@ -818,6 +853,7 @@ input.booking-txt-color::placeholder {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.3);
   cursor: pointer;
+  outline: none;
 }
 
 .range-controls .toggle-min {
@@ -829,6 +865,10 @@ input.booking-txt-color::placeholder {
 }
 
 .range-controls .toggle:hover {
+  transform: scale(1.2);
+}
+
+.range-controls .toggle:focus {
   transform: scale(1.2);
 }
 
@@ -899,6 +939,7 @@ input.booking-txt-color::placeholder {
 .selection-item-link {
   border-bottom: 1px dashed var(--basic-blue);
   color: var(--basic-sort-grey);
+  outline: none;
 }
 
 .selection-item-link:hover {
@@ -929,7 +970,14 @@ input.booking-txt-color::placeholder {
   cursor: pointer;
 }
 
-.item-up:before, .item-down:before {
+.item-down-active {
+  fill: var(--basic-blue);
+  position: absolute;
+  top: 39px;
+  right: 74px;
+}
+
+.item-up:before {
   content: "";
   position: absolute;
   border: 6px solid transparent;
@@ -952,9 +1000,8 @@ input.booking-txt-color::placeholder {
   border-bottom: 10px solid var(--basic-black);
 }
 
-.item-down:hover:before {
-  border: 6px solid transparent;
-  border-top: 10px solid var(--basic-black);
+.item-down:hover {
+  fill: var(--basic-black);
 }
 
 .item-up:focus:before, .item-up:active:before {
@@ -962,9 +1009,8 @@ input.booking-txt-color::placeholder {
   border-bottom: 10px solid var(--basic-blue);
 }
 
-.item-down:focus:before, .item-down:active:before {
-  border: 6px solid transparent;
-  border-top: 10px solid var(--basic-blue);
+.item-down:focus, .item-down:active {
+  fill: var(--basic-blue);
 }
 
 .sort-txt {
