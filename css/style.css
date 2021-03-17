@@ -409,6 +409,24 @@ img {
   z-index: 1;
 }
 
+.booking-form {
+  display: none;
+}
+
+.booking-form-show {
+  display: block;
+  animation: bounce .6s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .booking-item {
   margin-bottom: 29px;
   display: flex;
@@ -975,6 +993,7 @@ input[type='number'] {
   position: absolute;
   top: 39px;
   right: 74px;
+  outline: none;
 }
 
 .item-up:before {
@@ -1098,10 +1117,15 @@ input[type='number'] {
   font-family: inherit;
   font-size: 21px;
   line-height: 26px;
-  color: var(--basic-black)
+  color: var(--basic-black);
+  outline: none;
 }
 
 .sort-title-link:hover {
+  color: var(--basic-blue);
+}
+
+.sort-title-link:focus {
   color: var(--basic-blue);
 }
 
