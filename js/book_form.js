@@ -1,9 +1,11 @@
 const bookingLink = document.querySelector(".booking-link");
 const bookingForm = document.querySelector(".booking-form");
+document.body.classList.remove("no-js");
 
 bookingLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   bookingForm.classList.toggle("booking-form-show");
+
 });
 
 window.addEventListener("keydown", function (evt) {
