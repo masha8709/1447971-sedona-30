@@ -1,5 +1,5 @@
-const bookingLink = document.querySelector('.booking-link');
-const bookingForm = document.querySelector('.booking-form');
+const bookingLink = document.querySelector(".booking-link");
+const bookingForm = document.querySelector(".booking-form");
 
 bookingLink.addEventListener("click", function (evt) {
   evt.preventDefault();
