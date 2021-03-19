@@ -1060,7 +1060,7 @@ input[type="number"] {
   position: absolute;
   width: 1200px;
   border-bottom: 1px solid var(--basic-grey-modal-border);
-  bottom: 0px;
+  bottom: 6px;
   left: 0px;
 }
 
@@ -1189,7 +1189,7 @@ input[type="number"] {
 }
 
 .sort-item {
-  margin-bottom: 59px;
+  margin-bottom: 54px;
   list-style: none;
   color: inherit;
   display: -ms-grid;
@@ -1227,6 +1227,7 @@ input[type="number"] {
 
 .sort-five-stars, .sort-three-stars, .sort-two-stars {
   position: relative;
+  height: 30px;
 }
 
 .sort-five-stars:before, .sort-three-stars:before, .sort-two-stars:before {
@@ -1262,7 +1263,7 @@ input[type="number"] {
 
 .sort-title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   margin-top: -4px;
 }
 
@@ -1289,7 +1290,7 @@ input[type="number"] {
 .sort-range-wrp {
   width: 260px;
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   font-weight: 400;
   font-size: 14px;
   display: -webkit-box;
@@ -1302,12 +1303,21 @@ input[type="number"] {
 
 .sort-range-price {
   margin-right: 82px;
+  white-space: nowrap;
+}
+
+.sort-buttons {
+  display: flex;
+  width: 264px;
+  flex-wrap: wrap;
 }
 
 .more-info {
   background-color: var(--basic-blue);
   padding: 5px 17px;
   font-size: 14px;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
 .more-info:hover {
@@ -1323,6 +1333,7 @@ input[type="number"] {
   background-color: var(--basic-brown);
   padding: 5px 17px;
   font-size: 14px;
+  margin-bottom: 5px;
 }
 
 .book-button:hover {
@@ -1338,5 +1349,5 @@ input[type="number"] {
 
 .footer-catalog {
   background-color: var(--basic-white);
-  margin-top: 0px;
+  margin-top: -6px;
 }
