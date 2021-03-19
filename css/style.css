@@ -757,16 +757,27 @@ input[type="number"] {
 }
 
 .social-button {
-  fill: var(--basic-blue);
   margin-right: 6px;
 }
 
-.social-button:hover {
+.social-button rect {
+  fill: var(--basic-blue);
+}
+
+.social-button path {
+  fill: var(--basic-white);
+}
+
+.social-button:hover rect {
   fill: var(--basic-hover-blue);
 }
 
-.social-button:active {
+.social-button:active rect {
   fill: var(--basic-focus-blue);
+}
+
+.social-button:active path {
+  fill: var(--basic-white-with-opacity);
 }
 
 .footer-copyright {
